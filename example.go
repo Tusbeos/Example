@@ -5,7 +5,6 @@ import (
 	"strings"
 )
 
-// 1. Ví dụ về Array
 func arrayExample() {
 	var arr [5]int = [5]int{1, 2, 3, 4, 5}
 	fmt.Println("Array:", arr)
@@ -13,16 +12,12 @@ func arrayExample() {
 	arr[2] = 10
 	fmt.Println("Array sau khi thay doi:", arr)
 }
-
-// 2. Ví dụ về String
 func stringExample() {
 	str := "Hello, Golang!"
 	fmt.Println("Chuoi ban dau:", str)
 	fmt.Println("Do dai cua chuoi:", len(str))
 	fmt.Println("Caplock:", strings.ToUpper(str))
 }
-
-// 3. Ví dụ về Slices
 func sliceExample() {
 	slice := []int{1, 2, 3, 4, 5}
 	fmt.Println("Slice:", slice)
@@ -34,12 +29,10 @@ func sliceExample() {
 	fmt.Println("Lay phan tu (1:4):", subSlice)
 }
 
-// 4. Ví dụ về Functions
 func add(a int, b int) int {
 	return a + b
 }
 
-// 5. Ví dụ về Methods trên Struct
 type Rectangle struct {
 	width, height float64
 }
@@ -49,7 +42,7 @@ func (r Rectangle) Area() float64 {
 }
 
 // Hàm main duy nhất gọi tất cả các ví dụ trên
-func Check() {
+func main() {
 	fmt.Println("\n--- Array Example ---")
 	arrayExample()
 
